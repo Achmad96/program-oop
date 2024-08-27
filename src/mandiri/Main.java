@@ -1,4 +1,6 @@
 package mandiri;
+// Nama:  Achmad Raihan
+// NIM:   09020623015
 
 public class Main {
   public static void main(String[] args) {
