@@ -7,9 +7,9 @@ public class Eksepsi {
     final Scanner input = new Scanner(System.in);
     try {
       System.out.print("Nama: ");
-      String nama = input.nextLine();
+      final String nama = input.nextLine();
       System.out.print("Umur: ");
-      int umur = Integer.parseInt(input.nextLine());
+      final int umur = Integer.parseInt(input.nextLine());
       validate(nama, umur);
       System.out.printf("""
           BIOGRAPHY
