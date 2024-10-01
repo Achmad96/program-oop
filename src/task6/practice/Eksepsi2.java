@@ -17,3 +17,10 @@ public class Eksepsi2 {
     System.out.println("Out of block");
   }
 }
+/*
+ * Kode program tersebut menangkap error yang terjadi secara urut dan
+ * akan menampilkan Exception thrown: java.lang.ArithmeticException karena
+ * pembagian dengan nol dan diikuti dengan Exception thrown:
+ * java.lang.ArrayIndexOutOfBoundsException karena access
+ * element yang melebihi panjang array.
+ */

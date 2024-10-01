@@ -7,6 +7,12 @@ import java.util.Scanner;
 
 public class Eksepsi {
   public static void main(String[] args) {
+    getException1();
+    getException2();
+    getException3();
+  }
+
+  public static void getException1() {
     try {
       File file = new File("D://test1.txt");
       FileReader fileReader = new FileReader(file);
@@ -23,24 +29,18 @@ public class Eksepsi {
     } catch (IOException e) {
       System.out.println("File tidak ditemukan!");
     }
+  }
 
+  public static void getException2() {
     try {
       int[] nums = { 1, 2, 3, 4 };
       System.out.println(nums[5]);
     } catch (IndexOutOfBoundsException e) {
       System.out.println("Elemen tidak ditemukan!");
     }
+  }
 
-    try {
-      int a[] = new int[2];
-      int b = 0;
-      int c = 1 / b;
-      System.out.printf("c = %d%n", c);
-      System.out.println("Accessing index " + a[3]);
-    } catch (IndexOutOfBoundsException | ArithmeticException e) {
-      System.out.println("Terjadi error: " + e.getMessage());
-    }
-
+  public static void getException3() {
     try {
       Scanner input = new Scanner(System.in);
       System.out.print("Masukkan angka: ");
@@ -62,5 +62,20 @@ public class Eksepsi {
     return false;
   }
 }
-
-/* Pada kode try-catch pertama dibuat untuk menangani eksepsi */
+/*
+ * Kode eksepsi pertama
+ * Jika file test1.txt tidak ada di lokasi yang ditentukan, maka program akan
+ * menampilkan "File tidak ditemukan!".
+ * 
+ * Kode eksepsi kedua
+ * Karena nums[5] tidak ada, eksepsi IndexOutOfBoundsException dilempar, dan
+ * pesan "Elemen tidak ditemukan!" akan ditampilkan.
+ * 
+ * Kode eksepsi ketiga
+ * Eksepsi pertama yang akan terjadi adalah ArithmeticException karena pembagian
+ * dengan nol. Program akan menangkap eksepsi ini, menampilkan pesan
+ * "Terjadi error: / by zero".
+ * Jika ArithmeticException tidak terjadi, program akan menangkap
+ * IndexOutOfBoundsException ketika mencoba mengakses indeks a[3].
+ * 
+ */

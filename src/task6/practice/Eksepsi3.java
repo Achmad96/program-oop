@@ -17,3 +17,11 @@ public class Eksepsi3 {
     System.out.println("Out of block");
   }
 }
+
+/*
+ * Alur dari error yang terjadi pertama kali adalah pembagian dengan nol yang
+ * tidak ditangkap dengan baik karena kesalahan penggunaan sintaks eksepsi, yang
+ * seharusnya ArithmaticException atau Exception dibanding
+ * ArrayIndexOutOfBoundsException, sehingga penangkapan error tersebut terjadi
+ * di luar dari blok.
+ */
