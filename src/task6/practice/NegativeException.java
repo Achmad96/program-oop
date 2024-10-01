@@ -1,4 +1,4 @@
-package daysevendemo;
+package task6.practice;
 
 public class NegativeException extends Exception {
   public NegativeException() {

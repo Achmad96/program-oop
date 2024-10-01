@@ -1,4 +1,4 @@
-package daysevendemo;
+package task6.practice;
 
 import java.io.File;
 import java.io.FileReader;

@@ -1,4 +1,4 @@
-package daysevendemo;
+package task6.practice;
 
 public class Eksepsi3 {
   public static void main(String[] args) {
