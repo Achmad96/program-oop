@@ -1,5 +1,10 @@
 # Results
 
+## Identity
+
+<p>Nama: Achmad Raihan</p>
+<p>NIM : 09020623015</p>
+
 ### Problem 1
 
 ![alt text](<Screenshot 2024-10-08 144712.png>)
